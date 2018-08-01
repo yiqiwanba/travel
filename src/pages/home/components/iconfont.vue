@@ -1,7 +1,7 @@
 <template>
 <div class="icon">
 	<swiper :options="swiperOption" ref="mySwiper">
-	<swiper-slide v-for="page_list of pages">
+	<swiper-slide v-for="(page_list,index) of pages" :key="index">
 	<div class="icon-item" v-for="item of page_list" :key="item.id">
 		<div class="img_box">
 			<img class="icon-item-pic" :src='item.imgurl'/>
