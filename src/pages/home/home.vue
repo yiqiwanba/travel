@@ -3,6 +3,8 @@
 		<home-head></home-head>
 		<home-swiper></home-swiper>
 		<iconfont-head></iconfont-head>
+		<recommend></recommend>
+		<week-hot></week-hot>
 	</div>
 	
 </template>
@@ -12,13 +14,17 @@
 import homeHead from './components/homeHead'
 import HomeSwiper from './components/swiper'
 import iconfontHead from './components/iconfont'
+import recommend from './components/recommend'
+import weekHot from './components/weekHot'
 import axios from "axios"
 export default{
 	name:'home',
 	components:{//接收组件
 		homeHead:homeHead,
 		HomeSwiper:HomeSwiper,
-		iconfontHead:iconfontHead
+		iconfontHead:iconfontHead,
+		recommend:recommend,
+		weekHot:weekHot
 	},
 	data(){
 		return{
